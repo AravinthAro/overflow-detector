@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .popup-wrapper {
+            min-width: 250px;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        button {
+            border-radius: 4px;
+            padding: 5px 8px;
+            background-color: cornflowerblue;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:active,
+        button:focus {
+            outline: none;
+        }
+
+        .hide{
+            display: none !important;
+        }
+
+        /*Loader*/
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid #3498db;
+            width: 30px;
+            height: 30px;
+            animation: spin .5s linear infinite;
+            margin:10px auto;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-wrapper">
+        <h3>Overflow-detector</h3>
+        <p id="responseText"></p>
+        <div id="loader" class="loader hide"></div>
+        <button id="mainBtn">Detect</button>
+        <script src="/popup.js"></script>
+    </div>
+</body>
+
+</html>
