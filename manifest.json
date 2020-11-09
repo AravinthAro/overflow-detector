@@ -13,7 +13,7 @@
             "48" : "images/Overflow-detector-logo-48.png",
             "128" : "images/Overflow-detector-logo-128.png"
         },
-        "default_title": "An extension to find the DOM element which is causing the horizontal scroll.",
+        "default_title": "An extension to find the DOM element which is causing the horizontal scroll. Testing",
         "default_popup": "popup.html"
     },
 
